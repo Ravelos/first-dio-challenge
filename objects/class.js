@@ -7,5 +7,8 @@ const person = {
   },
 };
 
+person.name = 'Tito';
+person.age = 40;
+
 person.describe();
 
