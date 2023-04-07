@@ -25,3 +25,28 @@ class car{
 const volvo = new car('volvo','red', 3/12);
 
 console.log('You spent '+ volvo.gasExpenses(5,25) + '$Rs on this trip');
+
+
+/*
+Create a class person to calculate its BMI(Body Mass Index)
+*/
+
+class person{
+    personName;
+    weightInKg;
+    heightInMeters;
+
+    constructor(personName,weightInKg,heightInMeters){
+        this.personName = personName;
+        this.weightInKg = weightInKg;
+        this.heightInMeters = heightInMeters;
+    }
+
+    calculateBMI(){
+        return this.weightInKg / (this.heightInMeters * this.heightInMeters);
+    }
+}
+
+const robert = new person('Robert', 80 , 7/4);
+
+console.log('Your BMI is: '+ robert.calculateBMI());
