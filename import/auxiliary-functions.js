@@ -1,5 +1,10 @@
+const inputs = [5, 50, 10, 98, 23];
+let i = 0;
+
 function gets() {
-  return 10;
+    const value = inputs[i];
+    i++;
+    return value;
 }
 
 function print(text) {
