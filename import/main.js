@@ -16,21 +16,27 @@
 
 // console.log(functions);
 
-const { gets, print } = require('./auxiliary-functions')
+const { gets, print } = require("./auxiliary-functions");
 
-const randomNumbers = [];
+const studentsQuantity = gets();
+let biggestNumber = 0;
 
-for (let i=0; i<5; i++ ){
-    const randomNumber = gets();
-    randomNumbers.push(randomNumber);
+for (let i = 0; i < studentsQuantity; i++) {
+  const randomNumber = gets();
+  if (randomNumber > biggestNumber) {
+    biggestNumber = randomNumber;
+  }
 }
 
-let biggestNumber = -1;
+print(biggestNumber);
+
+/* This is another way to do it:
+
 for (let i =0 ; i < randomNumbers.length; i++){
     const randomNumber = randomNumbers[i];
     if(randomNumber > biggestNumber){
         biggestNumber = randomNumber;
     }
-}
+} 
 
-print(biggestNumber);
+*/
