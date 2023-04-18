@@ -12,13 +12,18 @@ class CardNews extends HTMLElement{
         
         
         // Creating card left
-        
+
         const cardLeft = document.createElement("div");
         cardLeft.setAttribute("class","card__left");
 
         const author = document.createElement("span");
+        author.textContent = "By " + (this.getAttribute("author") || "Anonymous");
+
         const linkTitle = document.createElement("a");
+        linkTitle.textContent = this.getAttribute("title");
+
         const newsContent = document.createElement("p");
+        newsContent.textContent = this.getAttribute("content")
 
         cardLeft.appendChild(author);
         cardLeft.appendChild(linkTitle);
