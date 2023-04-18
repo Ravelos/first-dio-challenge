@@ -11,25 +11,23 @@
 </head>
 <body>
     <div class="container">
-        <div class="card">
-            <div class="card__left">
-                <span>By Oswaldo Ravelo</span>
-                <a href="#">Darth Vader is hiring devs</a>
-                <p>Darth Vader is looking for Front-end engineers who know how to work with components.</p>
-            </div>
-            <div class="card__right">
-                <img src="/assets/darth.jpg" alt="Darth Vader picture">
-            </div>
-        </div>
+         <card-news
+            author=""
+            title="Dark Vader is hiring devs"
+            url-link="www.google.com"
+            photo ="assets\darth.jpg"
+            content="Darth Vader is looking for Front-end engineers who know how to work with components."
+        ></card-news>
+        <card-news
+            author="Orlando"
+            title="Yoda convince the republic to utilize components"
+            url-link="www.google.com"
+            content="After many meetings the green guy...."
+        ></card-news>
+
+        <dynamic-title title="Breaking news"></dynamic-title>
+        <dynamic-title title="Foreign news"></dynamic-title>
     </div>
-    <card-news
-     author=""
-     title="Dark Vader is hiring devs"
-     url-link="www.google.com"
-     photo ="assets\darth.jpg"
-     content="Darth Vader is looking for Front-end engineers who know how to work with components."
-    ></card-news>
-    <dynamic-title title="Breaking news"></dynamic-title>
-    <dynamic-title title="Foreign news"></dynamic-title>
+    
 </body>
 </html>
