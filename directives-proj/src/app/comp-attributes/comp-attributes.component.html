@@ -1,0 +1,21 @@
+<p [ngClass]="estilo">comp-attributes works!</p>
+<button (click)="changeStyle()">CHANGE</button>
+<h1 [ngStyle]="{'background-color': corFundo, 'color':corDaFonte}">ANGULAR COURSE</h1>
+
+<h1>Shopping list:</h1>
+<p>Add an item</p>
+<input type="text" [(ngModel)]="item">
+<button (click)="addList()">Add</button>
+<p>{{item}}</p>
+<ul>
+  <li *ngFor="let element of list">{{element}}</li>
+</ul>
+<hr>
+<ng-template [ngIf]="isEnableBlock">
+  <a href="#">Buy</a>
+</ng-template>
+<br>
+<ng-template [ngIf]="isEnableBlock">
+  <a href="#">Add to the car</a>
+</ng-template>
+<hr>
