@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { TitleComponent } from './title/title.component';
+import { CheckSampleComponent } from './check-sample/check-sample.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TitleComponent
+    TitleComponent,
+    CheckSampleComponent
   ],
   imports: [
     BrowserModule,
