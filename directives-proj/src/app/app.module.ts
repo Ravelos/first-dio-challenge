@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { CardComponent } from './card/card.component';
 import { CommonModule } from '@angular/common';
 import { CompAttributesComponent } from './comp-attributes/comp-attributes.component';
+import { ListModule } from './list/list.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CompAttributesComponent } from './comp-attributes/comp-attributes.compo
     BrowserModule,
     AppRoutingModule,
     CommonModule,
-    FormsModule
+    FormsModule,
+    ListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
